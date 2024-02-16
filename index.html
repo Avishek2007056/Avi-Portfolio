@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
@@ -18,6 +19,24 @@
             <a href="#experiences" style="--i:3">Experiences</a>
             <a href="#Skills" style="--i:4">Skills</a>
             <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+        <nav id="hamburger-nav">
+            <!-- <div class="logo">Portfolio</div> -->
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <a href="#home" onclick="toggleMenu()" style="--i:1"class="active">Home</a>
+                    <a href="#about" onclick="toggleMenu()" style="--i:2">About</a>
+                    <a href="#experiences" onclick="toggleMenu()" style="--i:3">Experiences</a>
+                    <a href="#Skills" onclick="toggleMenu()" style="--i:4">Skills</a>
+                    <a href="#contact" onclick="toggleMenu()" style="--i:5">Contact</a>
+
+                </div>
+            </div>
         </nav>
     </header>
 
